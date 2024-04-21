@@ -1,38 +1,164 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family:'Courier New', Courier, monospace;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body{
+  height: 100vh;
+  width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: black;
+  color: azure;
+}
+.container{
+  max-width: 480px;
+  width: 100%;
+  background: #4047F4;
+  padding: 35px 40px;
+  border-radius: 6px;
+  box-shadow: rgba(0,0,0,0.2);
+}
+
+.Inputs input{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  height: 40px;
+  margin: 20px 0;
+}
+
+.input button{
+   cursor: pointer;
+} 
+.input button :hover{
+  background:slategray;
+}
+.navbar {
+  background-color: #343a40; /* Dark background color */
+}
+
+.logo {
+  height: 40px; /* Adjust the logo height as needed */
+  margin-right: 20px; /* Add margin to the right of the logo */
+}
+
+.tab-container {
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
+
+.nav-tab {
+  list-style: none;
+  display: flex;
+  margin-right: auto; /* Push the search button to the right */
+}
+
+.nav-tab li {
+  margin-right: 20px; /* Add spacing between navigation items */
+}
+
+.nav-tab a {
+  text-decoration: none;
+  color: white; /* Text color for navigation items */
+  font-weight: bold;
+}
+
+.nav-tab a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Style the search button */
+.btn-outline-success {
+  margin-left: 20px; /* Add margin to the left of the button */
+  color: #28a745; /* Text color */
+  border-color: #28a745; /* Border color */
+}
+
+.btn-outline-success:hover {
+  background-color: #28a745; /* Background color on hover */
+  color: white; /* Text color on hover */
+}
+
+
+
+.other-container {
+  display: flex;
+  flex-direction: column; /* Arrange children in a column */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-align: center; /* Center text */
+  margin: 20px 0; /* Adjust the margin as needed */
+}
+
+.img {
+  max-width: 100%; 
+  /* Make sure the image doesn't overflow its container */
+  width: 800px;
+  height: 600px;
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Add rounded corners to the image */
+  margin-bottom: 40px; /* Add space between the image and the paragraph */
+  transition: transform 0.3s ease-in-out; /* Smooth transition on hover */
+}
+
+.img:hover {
+  transform: scale(1.1); /* Scale up on hover */
+}
+
+.para {
+  padding: 0 20px; /* Adjust the padding as needed */
+}
+
+.para p {
+  font-size: 16px;
+  line-height: 1.5;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.shimer-container
+{
+  display: flex;
+  flex-wrap: wrap;
+}
+.shimemr-card {
+  margin: 5px;
+  padding: 20px;
+  width: 200px;
+  height: 350px;
+  background-color:#f0f0f0;
+}
+.input-con{
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  justify-content: center;
+}
+.nav-tab{
+  margin: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.res-card{
+  width: 200px;
+  height: 350px;
+  border: 2px solid #f0f0f0;
+  padding: 20px;
+  margin: 5px;
+}
+
+.res-card:hover{
+  border: 1px solid blue;
+  cursor: pointer;
+}
+.res
+{
+  width: 100px;
+}
+
+.rest-container{
+  display: flex;
+  flex-wrap: wrap;
 }

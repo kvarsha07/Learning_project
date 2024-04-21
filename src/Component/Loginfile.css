@@ -1,0 +1,12 @@
+.container{
+    justify-items: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+.Inputs{
+    align-items: center;
+   margin-top: 10px;
+}
+
+
